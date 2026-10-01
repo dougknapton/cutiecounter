@@ -17,24 +17,16 @@ function Choices({
   options,
   value,
   onPick,
-  columns,
 }: {
   heading: string;
   options: string[];
   value: string | null;
   onPick: (v: string | null) => void;
-  /** Fixed column count; omit to let chips wrap at their natural width. */
-  columns?: number;
 }) {
   return (
     <section className="section">
       <h2 className="section-heading">{heading}</h2>
-      <div
-        className={columns ? 'chips chips--grid' : 'chips'}
-        role="radiogroup"
-        aria-label={heading}
-        style={columns ? { gridTemplateColumns: `repeat(${columns}, 1fr)` } : undefined}
-      >
+      <div className="chips" role="radiogroup" aria-label={heading}>
         {options.map((opt) => {
           const on = value === opt;
           return (
@@ -81,7 +73,6 @@ export function TaskDetail({ task, details, onChange, onBack, onReset, onSubmit,
           options={raceOptions}
           value={details.race}
           onPick={(race) => onChange({ ...details, race })}
-          columns={2}
         />
         <Choices
           heading={labels.ageHeading}

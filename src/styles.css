@@ -310,9 +310,6 @@ button {
   flex-wrap: wrap;
   gap: 10px;
 }
-.chips--grid {
-  display: grid;
-}
 .chip {
   min-height: 46px;
   padding: 10px 16px;
