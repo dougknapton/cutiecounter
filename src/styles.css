@@ -4,6 +4,7 @@
   --text: #111111;
   --muted: #8a8a8a;
   --line: #dcdcdc;
+  --hairline: #f0f0f0;
   --line-strong: #111111;
   --fill: #111111;
   --on-fill: #ffffff;
@@ -21,6 +22,7 @@
     --text: #f2f2f2;
     --muted: #8a8a8a;
     --line: #3a3a3a;
+  --hairline: #1c1c1c;
     --line-strong: #f2f2f2;
     --fill: #f2f2f2;
     --on-fill: #000000;
@@ -138,6 +140,9 @@ button {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+.radio-list li + li {
+  border-top: 1px solid var(--hairline);
 }
 .row {
   display: flex;

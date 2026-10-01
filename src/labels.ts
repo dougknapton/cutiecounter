@@ -6,7 +6,7 @@
  */
 
 export const labels = {
-  appTitle: 'Compliment',
+  appTitle: 'Add Compliment',
 
   // Screen 1
   tabFrequent: 'Frequent',
