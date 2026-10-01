@@ -3,7 +3,7 @@
 import { deflateSync } from 'node:zlib';
 import { writeFileSync } from 'node:fs';
 
-const BG = [0x6b, 0x77, 0x85];
+const BG = [0x11, 0x11, 0x11];
 const FG = [0xff, 0xff, 0xff];
 
 function distToSegment(px, py, ax, ay, bx, by) {

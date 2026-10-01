@@ -24,6 +24,7 @@ export const labels = {
   raceHeading: 'Group',
   ageHeading: 'Range',
   submit: 'Submit',
+  reset: 'Reset',
   submitting: 'Saving…',
 
   // Feedback

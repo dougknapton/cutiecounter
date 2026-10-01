@@ -138,6 +138,7 @@ export function App() {
           details={details}
           onChange={setDetails}
           onBack={goBack}
+          onReset={() => setDetails(emptyDetails)}
           onSubmit={submit}
           submitting={submitting}
         />

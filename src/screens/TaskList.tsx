@@ -57,14 +57,14 @@ export function TaskList({ compliments, tab, onTab, selected, onSelect, onAdd, o
         {items.length === 0 ? (
           <p className="muted empty">{labels.emptyList}</p>
         ) : (
-          <ul className="group checklist" role="radiogroup">
+          <ul className="radio-list" role="radiogroup">
             {items.map((c) => {
               const isSel = c.name === selected;
               return (
                 <li key={c.name}>
                   <button role="radio" aria-checked={isSel} className="row" onClick={() => onSelect(c.name)}>
-                    <span className={`check${isSel ? ' check--on' : ''}`} aria-hidden="true" />
                     <span className="row-text">{c.name}</span>
+                    <span className={`radio${isSel ? ' radio--on' : ''}`} aria-hidden="true" />
                   </button>
                 </li>
               );
