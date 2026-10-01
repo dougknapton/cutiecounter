@@ -199,7 +199,7 @@ button {
   gap: 10px;
   border: 1px solid var(--line);
   padding: 0 14px;
-  min-height: 52px;
+  min-height: 62px; /* 1.2x the 52px button height */
 }
 .add-row:focus-within {
   border-color: var(--line-strong);
