@@ -19,6 +19,8 @@ export const labels = {
   // Screen 2
   back: 'Tasks',
   detailsTitle: 'Add Compliment',
+  /** Heading on screen 2, built from the compliment picked on screen 1. */
+  whoSaid: (compliment: string) => `Who said ${compliment}?`,
   genderHeading: 'Gender',
   raceHeading: 'Race',
   ageHeading: 'Range',

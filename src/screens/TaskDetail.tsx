@@ -60,7 +60,7 @@ export function TaskDetail({ task, details, onChange, onBack, onReset, onSubmit,
       </nav>
 
       <main className="scroll">
-        <p className="task-title">{task}</p>
+        <h1 className="task-title">{labels.whoSaid(task)}</h1>
 
         <Choices
           heading={labels.genderHeading}
